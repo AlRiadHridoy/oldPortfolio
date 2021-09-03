@@ -1,0 +1,48 @@
+@-webkit-keyframes circle-1 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes circle-1 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@-webkit-keyframes circle-2 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes circle-2 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@-webkit-keyframes circle-3 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+
+@keyframes circle-3 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+
+@-webkit-keyframes circle-4 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+
+@keyframes circle-4 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+/*# sourceMappingURL=animation.css.map */

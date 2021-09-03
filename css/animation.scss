@@ -1,0 +1,32 @@
+
+@keyframes circle-1 {
+    100% {
+      stroke-dashoffset: 100;
+    }
+  }
+@keyframes circle-2 {
+    100% {
+      stroke-dashoffset: 50;
+    }
+  }
+@keyframes circle-3 {
+    100% {
+      stroke-dashoffset: 150;
+    }
+  }
+@keyframes circle-4 {
+    100% {
+      stroke-dashoffset: 125;
+    }
+  }
+
+
+
+// Social link animation
+// @keyframes social-links {
+//   100% {
+//     height: 180%;
+//     width: 180%;
+//     opacity: 0;
+//   }
+// }
