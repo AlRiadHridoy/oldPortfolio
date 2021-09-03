@@ -440,6 +440,104 @@ Hero Section Area
 }
 
 /***********************************************
+Skells Area
+************************************************/
+
+.skills {
+  background: url(images/hacker.jpg) center top / cover;
+  background-attachment: fixed;
+  .item {
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      stroke: var(--red);
+      margin-top: 2rem;
+    }
+  }
+}
+
+.skill-left {
+  h2 {
+    font-size: 3rem;
+    text-shadow: 2px 3px 1px rgba(224, 224, 224, 0.212);
+    position: relative;
+    letter-spacing: 4px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 2px;
+    }
+
+    &::before {
+      background-color: var(--red-lgh);
+      left: -1px;
+    }
+
+    &::after {
+      background-color: var(--mash-lg);
+      right: -1px;
+    }
+  }
+}
+
+.all {
+  position: relative;
+}
+
+.circle-1 svg {
+  height: 160px;
+  width: 160px;
+}
+.circle-2 svg {
+  height: 180px;
+  width: 180px;
+}
+
+.circle-1 circle {
+  fill: rgba(255, 255, 255, 0.123);
+  stroke: #ffffffd3;
+}
+
+.circle-2 circle {
+  fill: none;
+  stroke-width: 15px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+}
+
+.item-1 .circle-2 circle {
+  stroke: url(#GradientColor);
+  animation: circle-1 2s ease-in-out forwards;
+}
+
+.item-2 .circle-2 circle {
+  stroke: url(#GradientColor-2);
+  animation: circle-2 2s ease-in-out forwards;
+}
+.item-3 .circle-2 circle {
+  stroke: url(#GradientColor-3);
+  animation: circle-3 2s ease-in-out forwards;
+}
+.item-4 .circle-2 circle {
+  stroke: url(#GradientColor-4);
+  animation: circle-4 2s ease-in-out forwards;
+}
+
+.circle-2 {
+  position: absolute;
+}
+
+.percent {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--cornsilk);
+}
+
+/***********************************************
 Portfolio Area
 ************************************************/
 .portfolio {
