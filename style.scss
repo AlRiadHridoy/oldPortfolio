@@ -307,15 +307,6 @@ nav {
     padding: 1.4rem 0;
     transition: all 0.3s ease-in-out;
 
-
-  // a {
-  //   padding: 0.8rem 1rem;
-  //   border-top: 1px solid var(--red-lgh);
-  //   border-bottom: 1px solid var(--red-lgh);
-  //   transition: 0.2s ease-in-out;
-  //   border-radius: 15px 15px 5px 5px;
-  // }
-
   a {
     position: relative;
     border: none;
@@ -382,19 +373,19 @@ Hero Section Area
 
   img {
     width: 100%;
-    opacity: 0.6;
-    transition: 0.3s ease-in-out;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  img:hover {
-    transform: translate(0);
     opacity: 0.9;
     border-bottom-right-radius: 40%;
     border-top-left-radius: 40%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+  img:hover {
+    transform: translate(0);
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
   }
 }
 
@@ -446,104 +437,6 @@ Hero Section Area
     left: -1rem;
 
   }
-}
-
-/***********************************************
-Skells Area
-************************************************/
-
-.skills {
-  background: url(images/hacker.jpg) center top / cover;
-  background-attachment: fixed;
-  .item {
-    h3 {
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      stroke: var(--red);
-      margin-top: 2rem;
-    }
-  }
-}
-
-.skill-left {
-  h2 {
-    font-size: 3rem;
-    text-shadow: 2px 3px 1px rgba(224, 224, 224, 0.212);
-    position: relative;
-    letter-spacing: 4px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 50%;
-      height: 2px;
-    }
-
-    &::before {
-      background-color: var(--red-lgh);
-      left: -1px;
-    }
-
-    &::after {
-      background-color: var(--mash-lg);
-      right: -1px;
-    }
-  }
-}
-
-.all {
-  position: relative;
-}
-
-.circle-1 svg {
-  height: 160px;
-  width: 160px;
-}
-.circle-2 svg {
-  height: 180px;
-  width: 180px;
-}
-
-.circle-1 circle {
-  fill: rgba(255, 255, 255, 0.123);
-  stroke: #ffffffd3;
-}
-
-.circle-2 circle {
-  fill: none;
-  stroke-width: 15px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 502;
-}
-
-.item-1 .circle-2 circle {
-  stroke: url(#GradientColor);
-  animation: circle-1 2s ease-in-out forwards;
-}
-
-.item-2 .circle-2 circle {
-  stroke: url(#GradientColor-2);
-  animation: circle-2 2s ease-in-out forwards;
-}
-.item-3 .circle-2 circle {
-  stroke: url(#GradientColor-3);
-  animation: circle-3 2s ease-in-out forwards;
-}
-.item-4 .circle-2 circle {
-  stroke: url(#GradientColor-4);
-  animation: circle-4 2s ease-in-out forwards;
-}
-
-.circle-2 {
-  position: absolute;
-}
-
-.percent {
-  position: absolute;
-  font-size: 2rem;
-  color: var(--cornsilk);
 }
 
 /***********************************************
