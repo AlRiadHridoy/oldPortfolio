@@ -29,7 +29,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
 /********** 1.Typography  **********/
 :root {
-  --blk: #181818;
+  --blk: #3f3f3f;
   --demblk: #464646;
   --mash-drk: #203a43;
   --mash-lg: #2c5364;
@@ -37,7 +37,7 @@
   --cornsilk: #fff8dc;
   -pink: #f72585;
   --red: #d90429;
-  --red-lgh: #db1450;
+  --red-lgh: #ff008c;
   --rgb: #5c4d7d;
   --white: #ffffff;
   --pera: #6b6b6b;
@@ -86,7 +86,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   font-weight: var(--fntwit);
 }
 
@@ -171,9 +171,9 @@ body {
   font-weight: var(--fntwit);
   font-style: normal;
   line-height: 1.5;
-  background-color: #161616;
-  color: var(--white);
+  color: white;
   position: relative;
+  background-color: #2b1aaa;
 }
 
 .container {
@@ -199,7 +199,7 @@ footer {
 .sec-top h2 {
   opacity: 0;
   font-size: 4rem;
-  color: white;
+  color: var(--white);
   letter-spacing: 3px;
   position: relative;
   font-family: "comfortaa",cursive;
@@ -229,6 +229,7 @@ footer {
 
 .sec-top p {
   font-size: 1.1rem;
+  color: var(--white);
 }
 
 .contact-loc {
@@ -309,8 +310,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  background: #111111;
-  background: linear-gradient(54deg, #111111 50%, #1c1c1c 50%);
+  background: #3b28cc;
 }
 
 nav {
@@ -326,6 +326,11 @@ nav .main-logo {
   line-height: 0;
 }
 
+nav .main-logo img {
+  height: 40px;
+  width: 40px;
+}
+
 nav ul {
   gap: 1.5rem;
   font-family: var(--comforta);
@@ -339,6 +344,7 @@ nav ul a {
   border: none;
   padding: 0.6rem;
   z-index: 5;
+  font-weight: 600;
 }
 
 nav ul a::before {
@@ -379,14 +385,13 @@ nav ul i {
 Hero Section Area
 ************************************************/
 .hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0104097e)), url(images/robot.jpg) center center/cover;
-  background: linear-gradient(to top, #0104097e), url(images/robot.jpg) center center/cover;
   background-attachment: fixed;
   padding-top: 3rem;
   padding-bottom: 6rem;
   width: 100%;
   padding-top: 10rem;
   min-height: 40rem;
+  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
 }
 
 .my-img {
@@ -410,7 +415,7 @@ Hero Section Area
   border-bottom-left-radius: 0;
 }
 
-.my-img img:hover {
+.my-img img:hovr {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 0.6;
@@ -478,11 +483,6 @@ Hero Section Area
 /***********************************************
 Skells Area
 ************************************************/
-.skills {
-  background: url(images/hacker.jpg) center top/cover;
-  background-attachment: fixed;
-}
-
 .skills .item h3 {
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -579,9 +579,8 @@ Skells Area
 Portfolio Area
 ************************************************/
 .portfolio {
-  background: -webkit-gradient(linear, left bottom, left top, from(#010409ab)), url(images/portfolio-bg.png) center top/cover;
-  background: linear-gradient(to top, #010409ab), url(images/portfolio-bg.png) center top/cover;
-  background-attachment: fixed;
+  background: #EE1758;
+  background: linear-gradient(147deg, #c30b43 50%, #ee1758 50%);
 }
 
 .portfolio-bottom {
@@ -616,7 +615,7 @@ Portfolio Area
 
 .portfolio-items figure figcaption {
   height: 100%;
-  background: linear-gradient(45deg, #2c5364, #203a43, #0f2027);
+  background: #3b28cc;
   padding: 1rem 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -656,9 +655,7 @@ Portfolio Area
 Service Area
 ************************************************/
 .service {
-  background: -webkit-gradient(linear, left bottom, left top, from(#01040965)), url(images/hacker.jpg) center top/cover;
-  background: linear-gradient(to top, #01040965), url(images/hacker.jpg) center top/cover;
-  background-attachment: fixed;
+  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
 }
 
 .service-items {
@@ -693,7 +690,7 @@ Service Area
 }
 
 .service-items .item p {
-  color: #e7e7e7;
+  color: var(--white);
 }
 
 .service-items .item:hover .icon {
@@ -721,9 +718,8 @@ Service Area
 Contact Area
 ************************************************/
 .contact {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3))), url(images/temp.jpg) center top/cover;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.3)), url(images/temp.jpg) center top/cover;
-  background-attachment: fixed;
+  background-color: #EE1758;
+  background: linear-gradient(-140deg, #c30b43 50%, #ee1758 50%);
 }
 
 .contact-bottom {
@@ -781,8 +777,8 @@ Contact Area
 }
 
 .contact-info {
-  -webkit-box-shadow: inset 10px 10px 10px #181a1d, inset -10px -10px 10px #202225;
-          box-shadow: inset 10px 10px 10px #181a1d, inset -10px -10px 10px #202225;
+  -webkit-box-shadow: inset 10px 10px 10px #181a1d36, inset -10px -10px 10px #2022253b;
+          box-shadow: inset 10px 10px 10px #181a1d36, inset -10px -10px 10px #2022253b;
   background-color: #ffffff17;
   border: 1px solid var(--white);
   padding: 2rem;
@@ -808,7 +804,11 @@ Contact Area
 }
 
 .contact-info .cnct-frst-ul i:last-child {
-  color: #ea4335;
+  color: #3541ea;
+}
+
+.contact-info .cnct-scnd-ul i {
+  color: white;
 }
 
 .contact-bottom-right {
@@ -819,9 +819,8 @@ Contact Area
 Footer Area
 ************************************************/
 footer {
-  background: #051b3f;
-  background: linear-gradient(45deg, #2C5364, #203A43, #152f3a);
   padding-bottom: 2.5rem;
+  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
 }
 
 .footer-about-me {
@@ -838,7 +837,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #bebebe;
+  border-bottom: 1px solid #838383;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
