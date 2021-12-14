@@ -34,7 +34,7 @@
 /********** 1.Typography  **********/
 
 :root {
-  --blk: #181818;
+  --blk: #3f3f3f;
   --demblk: #464646;
   --mash-drk: #203a43;
   --mash-lg: #2c5364;
@@ -42,7 +42,7 @@
   --cornsilk: #fff8dc;
   -pink: #f72585;
   --red: #d90429;
-  --red-lgh: #db1450;
+  --red-lgh: #ff008c;
   --rgb: #5c4d7d;
   --white: #ffffff;
   --pera: #6b6b6b;
@@ -89,7 +89,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  color: var(--white);
+  color: var(--white)
 }
 
 ul {
@@ -98,7 +98,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: rgb(255, 255, 255);
   font-weight: var(--fntwit);
 }
 
@@ -157,9 +157,9 @@ body {
   font-weight: var(--fntwit);
   font-style: normal;
   line-height: 1.5;
-  background-color: rgb(22, 22, 22);
-  color: var(--white);
+  color: white;
   position: relative;
+  background-color: rgb(43, 26, 170);
 }
 
 .container {
@@ -184,7 +184,7 @@ footer {
   h2 {
     opacity: 0;
     font-size: 4rem;
-    color: white;
+    color: var(--white);
     letter-spacing: 3px;
     position: relative;
     font-family: "comfortaa",cursive;
@@ -213,6 +213,7 @@ footer {
 
   p {
     font-size: 1.1rem;
+    color: var(--white);
   }
 }
 
@@ -289,8 +290,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  background: rgb(17,17,17);
-  background: linear-gradient(54deg, rgba(17,17,17,1) 50%, rgba(28,28,28,1) 50%); 
+  background: rgb(59, 40, 204);
 }
 
 nav {
@@ -300,6 +300,10 @@ nav {
   .main-logo {
     line-height: 0;
 
+    img {
+      height: 40px;
+      width: 40px;
+    }
   }
   ul {
     gap: 1.5rem;
@@ -312,6 +316,7 @@ nav {
     border: none;
     padding: 0.6rem;
     z-index: 5;
+    font-weight: 600;
   }
 
   a::before {
@@ -350,14 +355,13 @@ Hero Section Area
 ************************************************/
 
 .hero {
-  background: linear-gradient(to top, #0104097e),
-    url(images/robot.jpg) center center / cover;
   background-attachment: fixed;
   padding-top: 3rem;
   padding-bottom: 6rem;
   width: 100%;
   padding-top: 10rem;
   min-height: 40rem;
+  background: linear-gradient(-45deg, rgba(43, 26, 170, 1) 50%, rgb(41, 18, 216) 50%);
 }
 
 .my-img {
@@ -380,7 +384,7 @@ Hero Section Area
     border-bottom-left-radius: 0;
   }
 
-  img:hover {
+  img:hovr {
     transform: translate(0);
     opacity: 0.6;
     transition: 0.3s ease-in-out;
@@ -444,8 +448,6 @@ Skells Area
 ************************************************/
 
 .skills {
-  background: url(images/hacker.jpg) center top / cover;
-  background-attachment: fixed;
   .item {
     h3 {
       text-transform: uppercase;
@@ -541,10 +543,8 @@ Skells Area
 Portfolio Area
 ************************************************/
 .portfolio {
-  background: linear-gradient(to top, #010409ab),
-    url(images/portfolio-bg.png) center top / cover;
-
-  background-attachment: fixed;
+  background: #EE1758;
+  background: linear-gradient(147deg, rgba(195,11,67,1) 50%, rgba(238,23,88,1) 50%);
 }
 
 .portfolio-bottom {
@@ -574,7 +574,7 @@ Portfolio Area
     }
     figcaption {
       height: 100%;
-      background: linear-gradient(45deg, #2c5364, #203a43, #0f2027);
+      background: rgb(59, 40, 204);
       padding: 1rem 0;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -612,9 +612,7 @@ Service Area
 ************************************************/
 
 .service {
-  background: linear-gradient(to top, #01040965),
-    url(images/hacker.jpg) center top / cover;
-  background-attachment: fixed;
+  background: linear-gradient(-45deg, rgba(43, 26, 170, 1) 50%, rgb(41, 18, 216) 50%);
 }
 
 .service-items {
@@ -627,7 +625,6 @@ Service Area
     border-radius: 10px;
     border: 1px solid hsl(0, 0%, 100%);
     padding: 1.2rem;
-    // box-shadow: inset 10px 10px 10px #181a1d, inset -10px -10px 10px #202225;
     max-width: 20rem;
 
     .icon {
@@ -646,7 +643,7 @@ Service Area
     }
 
     p {
-      color: rgb(231, 231, 231);
+      color: var(--white);
     }
   }
 
@@ -673,9 +670,8 @@ Service Area
 Contact Area
 ************************************************/
 .contact {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.3)),
-    url(images/temp.jpg) center top / cover;
-  background-attachment: fixed;
+  background-color: #EE1758;
+  background: linear-gradient(-140deg, rgba(195,11,67,1) 50%, rgba(238,23,88,1) 50%);
 }
 
 .contact-bottom {
@@ -728,7 +724,7 @@ Contact Area
   }
 }
 .contact-info {
-  box-shadow: inset 10px 10px 10px #181a1d, inset -10px -10px 10px #202225;
+  box-shadow: inset 10px 10px 10px #181a1d36, inset -10px -10px 10px #2022253b;
 
   background-color: #ffffff17;
   border: 1px solid var(--white);
@@ -751,11 +747,14 @@ Contact Area
       color: #1daa62;
     }
     i:last-child {
-      color: #ea4335;
+      color: #3541ea;
     }
   }
 
   .cnct-scnd-ul {
+    i {
+      color: rgb(255, 255, 255);
+    }
   }
 }
 
@@ -768,9 +767,8 @@ Footer Area
 ************************************************/
 
 footer {
-  background: #051b3f;
-  background: linear-gradient(45deg, #2C5364, #203A43, #152f3a);
   padding-bottom: 2.5rem;
+  background: linear-gradient(-45deg, rgba(43, 26, 170, 1) 50%, rgb(41, 18, 216) 50%);
 }
 
 .footer-content {
@@ -788,7 +786,7 @@ footer {
   gap: 2rem;
   justify-content: space-between;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgb(190, 190, 190);
+  border-bottom: 1px solid rgb(131, 131, 131);
   flex-wrap: wrap;
 
   ul {
