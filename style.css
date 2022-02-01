@@ -31,19 +31,20 @@
 :root {
   --blk: #3f3f3f;
   --demblk: #464646;
-  --mash-drk: #203a43;
-  --mash-lg: #ffffff;
-  --blued: #88d9e6;
+  --blued: #35b1ea;
   --cornsilk: #fff8dc;
-  -pink: #f72585;
+  --pink: #cd659f;
   --red: #d90429;
   --red-lgh: #ff008c;
   --rgb: #5c4d7d;
   --white: #ffffff;
   --pera: #6b6b6b;
   --dim-blk: #c2c2c2;
+  --bg: #0f172a;
+  --white-lite: rgba(255, 255, 255, 0.13);
+  --p-clr: #8d9cb1;
   --social-one: #1877f2;
-  --social-two: #1da1f2;
+  --social-two: #35b1ea;
   --social-three: #dd2a7b;
   --social-four: #0077b5;
   --fntwit: 400;
@@ -92,7 +93,7 @@ a {
 
 p {
   line-height: 1.5;
-  color: var(--white);
+  color: var(--p-clr);
 }
 
 input,
@@ -173,7 +174,7 @@ body {
   line-height: 1.5;
   color: white;
   position: relative;
-  background-color: #2b1aaa;
+  background-color: var(--bg);
 }
 
 .container {
@@ -202,7 +203,7 @@ footer {
   color: var(--white);
   letter-spacing: 3px;
   position: relative;
-  font-family: "comfortaa",cursive;
+  font-family: "comfortaa", cursive;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -218,7 +219,7 @@ footer {
 }
 
 .sec-top h2::before {
-  background-color: var(--red-lgh);
+  background-color: var(--pink);
   left: -2px;
 }
 
@@ -310,7 +311,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  background: #3b28cc;
+  z-index: 999;
 }
 
 nav {
@@ -356,9 +357,6 @@ nav ul a::before {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: #c30b43;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #c30b43), color-stop(50%, #ee1758));
-  background: linear-gradient(0deg, #c30b43 50%, #ee1758 50%);
   z-index: -1;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -368,6 +366,7 @@ nav ul a::before {
           transform: scaleX(0);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
+  background-color: #d768a5;
 }
 
 nav ul a:hover::before {
@@ -391,45 +390,25 @@ Hero Section Area
   width: 100%;
   padding-top: 10rem;
   min-height: 40rem;
-  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
+  border-bottom: 1px solid var(--white-lite);
 }
 
 .my-img {
-  border-bottom: 0.2px solid var(--mash-lg);
-  border-left: 0.2px solid var(--red-lgh);
-  border-top: 0.2px solid var(--red-lgh);
-  border-right: 0.2px solid var(--mash-lg);
-  border-top-left-radius: 50%;
+  border-bottom: 0.2px solid var(--blued);
+  border-left: 0.2px solid var(--pink);
+  border-top: 0.2px solid var(--pink);
+  border-right: 0.2px solid var(--blued);
+  border-radius: 50%;
   line-height: 0;
   font-size: 0;
-  max-width: 20rem;
+  max-width: 18rem;
   width: 100%;
 }
 
 .my-img img {
   width: 100%;
   opacity: 0.9;
-  border-bottom-right-radius: 40%;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.my-img img:hovr {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 0.6;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.hero-content {
-  gap: 2rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  border-radius: 50%;
 }
 
 .personal-info {
@@ -444,45 +423,109 @@ Hero Section Area
 
 .about-me {
   color: var(--blued);
+  margin-top: 3rem;
 }
 
 .about-me h2 {
   position: relative;
-  text-shadow: 3px 2px 8px rgba(255, 255, 255, 0.568);
+  display: inline-block;
+  font-size: 13rem;
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.about-me p {
+  color: #6b788d;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero-content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-top {
+  position: relative;
+  font-family: "comfortaa";
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.hero-top .name {
+  margin-top: 0.5rem;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.hero-top .name p {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.hero-top .name h2 {
+  position: relative;
+  margin-left: 1rem;
   display: inline-block;
   font-size: 2.5rem;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.about-me h1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.about-me p {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-.about-me {
-  position: relative;
-  font-family: 'comfortaa';
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-me h2::before {
-  content: "I'm";
+.hero-top h2::before {
+  content: "Hi, I'm";
   position: absolute;
-  top: -4rem;
-  left: -1rem;
+  top: -2rem;
+  font-size: 1.5rem;
+}
+
+.hero-bottom {
+  margin-top: 2rem;
+  font-family: "comfortaa";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-bottom h3 {
+  color: var(--blued);
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-bottom .skill-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  border-left: 1px solid var(--pink);
+  padding-left: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-bottom img {
+  width: 2.6rem;
+  opacity: 0.7;
+}
+
+.hero-bottom img:hover {
+  opacity: 1;
 }
 
 /***********************************************
 Skells Area
 ************************************************/
+.skills {
+  border-bottom: 1px solid white;
+}
+
 .skills .item h3 {
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -519,56 +562,6 @@ Skells Area
   position: relative;
 }
 
-.circle-1 svg {
-  height: 160px;
-  width: 160px;
-}
-
-.circle-2 svg {
-  height: 180px;
-  width: 180px;
-}
-
-.circle-1 circle {
-  fill: rgba(255, 255, 255, 0.123);
-  stroke: #ffffffd3;
-}
-
-.circle-2 circle {
-  fill: none;
-  stroke-width: 15px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 502;
-}
-
-.item-1 .circle-2 circle {
-  stroke: url(#GradientColor);
-  -webkit-animation: circle-1 2s ease-in-out forwards;
-          animation: circle-1 2s ease-in-out forwards;
-}
-
-.item-2 .circle-2 circle {
-  stroke: url(#GradientColor-2);
-  -webkit-animation: circle-2 2s ease-in-out forwards;
-          animation: circle-2 2s ease-in-out forwards;
-}
-
-.item-3 .circle-2 circle {
-  stroke: url(#GradientColor-3);
-  -webkit-animation: circle-3 2s ease-in-out forwards;
-          animation: circle-3 2s ease-in-out forwards;
-}
-
-.item-4 .circle-2 circle {
-  stroke: url(#GradientColor-4);
-  -webkit-animation: circle-4 2s ease-in-out forwards;
-          animation: circle-4 2s ease-in-out forwards;
-}
-
-.circle-2 {
-  position: absolute;
-}
-
 .percent {
   position: absolute;
   font-size: 2rem;
@@ -579,16 +572,14 @@ Skells Area
 Portfolio Area
 ************************************************/
 .portfolio {
-  background: #EE1758;
-  background: linear-gradient(147deg, #c30b43 50%, #ee1758 50%);
+  border-bottom: 1px solid var(--white-lite);
 }
 
 .portfolio-bottom {
   width: 100%;
-  background-color: #ffffff17;
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid var(--white-lite);
 }
 
 .portfolio-items {
@@ -615,7 +606,7 @@ Portfolio Area
 
 .portfolio-items figure figcaption {
   height: 100%;
-  background: #3b28cc;
+  background: #3d5064;
   padding: 1rem 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -626,9 +617,7 @@ Portfolio Area
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 5px;
-  background: #c30b43;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #c30b43), color-stop(50%, #ee1758));
-  background: linear-gradient(0deg, #c30b43 50%, #ee1758 50%);
+  background-color: var(--bg);
   display: inline-block;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -655,7 +644,7 @@ Portfolio Area
 Service Area
 ************************************************/
 .service {
-  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.062);
 }
 
 .service-items {
@@ -665,9 +654,8 @@ Service Area
 
 .service-items .item {
   gap: 1rem;
-  background-color: #ffffff17;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.116);
   padding: 1.2rem;
   max-width: 20rem;
 }
@@ -687,10 +675,6 @@ Service Area
 .service-items .item h3 {
   font-size: 1.2rem;
   text-transform: capitalize;
-}
-
-.service-items .item p {
-  color: var(--white);
 }
 
 .service-items .item:hover .icon {
@@ -718,8 +702,7 @@ Service Area
 Contact Area
 ************************************************/
 .contact {
-  background-color: #EE1758;
-  background: linear-gradient(-140deg, #c30b43 50%, #ee1758 50%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.062);
 }
 
 .contact-bottom {
@@ -753,7 +736,8 @@ Contact Area
           box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.082);
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   border: 1px solid var(--white);
 }
 
@@ -772,15 +756,14 @@ Contact Area
 }
 
 .contact-form button:hover {
-  -webkit-box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.678);
-          box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.678);
+  -webkit-box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.158);
+          box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.158);
 }
 
 .contact-info {
   -webkit-box-shadow: inset 10px 10px 10px #181a1d36, inset -10px -10px 10px #2022253b;
           box-shadow: inset 10px 10px 10px #181a1d36, inset -10px -10px 10px #2022253b;
-  background-color: #ffffff17;
-  border: 1px solid var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   padding: 2rem;
   gap: 2rem;
   border-radius: 5px;
@@ -804,11 +787,7 @@ Contact Area
 }
 
 .contact-info .cnct-frst-ul i:last-child {
-  color: #3541ea;
-}
-
-.contact-info .cnct-scnd-ul i {
-  color: white;
+  color: #e5625e;
 }
 
 .contact-bottom-right {
@@ -820,7 +799,6 @@ Footer Area
 ************************************************/
 footer {
   padding-bottom: 2.5rem;
-  background: linear-gradient(-45deg, #2b1aaa 50%, #2912d8 50%);
 }
 
 .footer-about-me {
@@ -837,7 +815,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #838383;
+  border-bottom: 1px solid var(--white-lite);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -860,6 +838,7 @@ footer {
 
 .footer-bottom {
   padding-top: 2rem;
+  color: var(--p-clr);
 }
 
 /***********************************************
@@ -875,8 +854,11 @@ Extra css
   left: 0;
   right: 0;
   z-index: 9999;
-  -webkit-box-shadow: 0 10px 19px #1c1e22, 0 -5px 19px #262a2e;
-          box-shadow: 0 10px 19px #1c1e22, 0 -5px 19px #262a2e;
+  -webkit-box-shadow: 0 10px 10px #1c1e2265, 0 -5px 10px #262a2e;
+          box-shadow: 0 10px 10px #1c1e2265, 0 -5px 10px #262a2e;
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  background-color: #0f172a93;
 }
 
 .sticky ul {
