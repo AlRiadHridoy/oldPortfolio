@@ -45,7 +45,6 @@ $(document).ready(function () {
 
   stickyNav();
 
-
   // Section header animation
   const option = {
     root: null,
@@ -56,66 +55,59 @@ $(document).ready(function () {
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate__flipInX" ,"opacity")
+        entry.target.classList.add("animate__flipInX", "opacity");
       }
     });
   }, option);
 
-    for (var i of $(".section-header")) {
-      observer.observe(i);
-    }
-
+  for (var i of $(".section-header")) {
+    observer.observe(i);
+  }
 
   // Section hero text animation
 
   const heroTextObserver = new IntersectionObserver(function (entries) {
-    var a = 500
+    var a = 500;
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate__zoomInDown')
+        entry.target.classList.add("animate__zoomInDown");
         setInterval(() => {
-        entry.target.classList.remove('zero')
+          entry.target.classList.remove("zero");
         }, a);
-        a += 500
+        a += 500;
       }
     });
   });
 
+  for (var a of $(".zero")) {
+    heroTextObserver.observe(a);
+  }
 
-for (var a of $('.zero')) {
-heroTextObserver.observe(a)
-}
+  const portfolioObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__fadeInLeft");
+      }
+    });
+  });
 
+  for (var y of $(".portfolio-bottom")) {
+    portfolioObserver.observe(y);
+  }
 
-const portfolioObserver = new IntersectionObserver(function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animate__fadeInLeft")
-    }
-  })
-})
+  const serviceObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__lightSpeedInLeft");
+      }
+    });
+  });
 
-for (var y of $('.portfolio-bottom')) {
-  portfolioObserver.observe(y)
-}
+  for (var t of $(".service-items .item")) {
+    serviceObserver.observe(t);
+  }
 
-
-const serviceObserver = new IntersectionObserver(function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animate__lightSpeedInLeft")
-    }
-  })
-})
-
-for (var t of $('.service-items .item')) {
-  serviceObserver.observe(t)
-}
-
-
-
-
-// Active nav link on scroll
+  // Active nav link on scroll
   function scrollActive() {
     const scrollY = window.pageYOffset;
 
@@ -138,39 +130,8 @@ for (var t of $('.service-items .item')) {
     scrollActive();
   });
 
+  // footer copyright
+  const year = new Date().getFullYear();
 
-  
+  $(".footer-bottom").html(`All Right reserved by ©Al Riad Hridoy ${year}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function() {
-//   const prg = function(n, ele) {
-//     var count = 0
-//     setInterval(() => {
-//       if (count < n) {
-//         count ++
-//       } else {
-//         clearInterval()
-//       }
-//       $(ele).html(count + "%")
-//     }, 18)
-//   }
-
-// const progress = [85, 90, 70, 80]
-//   for (var i = 0; i < 4; i++) {
-//     prg(progress[i], $('.percent')[i])
-//   }
-// })
