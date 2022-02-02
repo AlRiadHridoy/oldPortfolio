@@ -305,6 +305,17 @@ footer {
 }
 
 /***********************************************
+Covid_19
+************************************************/
+.covidbd img {
+  width: 3rem;
+  -webkit-animation: covid_rotate 3s linear infinite;
+          animation: covid_rotate 3s linear infinite;
+  opacity: 0.7;
+  display: block;
+}
+
+/***********************************************
 Header Area
 ************************************************/
 header {
@@ -862,7 +873,7 @@ Extra css
 }
 
 .sticky ul {
-  padding: 1rem 0;
+  padding: 1.3rem 0;
 }
 
 .opacity {
