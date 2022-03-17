@@ -1,1 +1,442 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="shortcut icon" href="my-icon.png"/><link rel="stylesheet" href="./css/animation.css"/><link rel="stylesheet" href="./css/owl.carousel.min.css"/><link rel="stylesheet" href="./css/font-awesome.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><title>Al Riad Hridoy</title><script defer="defer" src="/static/js/main.6700b493.js"></script><link href="/static/css/main.66f86699.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/pefecto-ai.png" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive Style Sheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Animation Style Sheet -->
+    <link rel="stylesheet" href="css/animation.css" />
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalizer -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <title>Al Riad Hridoy</title>
+  </head>
+  <body>
+    <!--==================================================-->
+    <!-----Start Header Section ----->
+    <!--===================================================-->
+    <header>
+      <div class="container">
+        <nav class="nav flex-row">
+          <div class="main-logo">
+            <a href="https://www.facebook.com/alriadhridoy/" target="__blank">
+              <img src="images/pefecto-ai.png" alt="" />
+            </a>
+          </div>
+
+          <a
+            class="covidbd"
+            href="http://alriadhridoycovidbd.netlify.app"
+            target="__blank"
+          >
+            <img src="./images/covid/covid_19.png" alt="covid_19_BD" />
+          </a>
+          <div class="hamburger flex-justify-column">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav-links flex-justify-row">
+            <a href="#home" class="active-link"
+              ><li><i class="fas fa-home"></i>Home</li></a
+            >
+            <a href="#portfolio"
+              ><li><i class="fas fa-briefcase"></i>Projects</li></a
+            >
+            <a href="#services"
+              ><li><i class="fas fa-code-branch"></i>Services</li>
+            </a>
+            <a href="#contact"
+              ><li><i class="fas fa-address-card"></i>Contact</li></a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--==================================================-->
+    <!-----Start Hero Section ----->
+    <!--===================================================-->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content flex-justify-column">
+          <div class="hero-top flex-row">
+            <img class="my-img" src="images/my-self.jpg" alt="" />
+            <div class="about-me">
+              <div class="name">
+                <h2 class="animate__animated zero">Al Riad Hridoy</h2>
+              </div>
+              <h1 class="animate__animated zero">Front-end Developer</h1>
+              <p class="animate__animated zero">
+                I build creative websites! And I believe -- "Action speaks
+                louder than words"
+              </p>
+            </div>
+          </div>
+          <div class="hero-bottom flex-row">
+            <h3>Skills</h3>
+            <div class="skill-icons">
+              <img src="./images/icons/python.png" alt="" />
+              <img src="./images/icons/javascript.png" alt="" />
+              <img src="./images/icons/react.png" alt="" />
+              <img src="./images/icons/scss.png" alt="" />
+              <img src="./images/icons/tailwind.png" alt="" />
+              <img src="./images/icons/photoshop.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================================================-->
+    <!-----Start Portfolio Section ----->
+    <!--===================================================-->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio-content flex-justify-column sec-content-gap">
+          <div class="portfolio-top flex-justify-column sec-top">
+            <h2 class="section-header animate__animated">Projects</h2>
+            <p>
+              My working experience. Here are a few projects I've worked on
+              recently. These are all user-friendly interfaces.
+            </p>
+          </div>
+          <div class="portfolio-bottom animate__animated">
+            <div class="portfolio-carousel owl-carousel portfolio-items">
+              <figure class="item specta">
+                <div class="web-img">
+                  <img src="images/portfolio/portfolio-1.jpg" alt="" />
+                </div>
+                <figcaption class="flex-justify-column">
+                  <a
+                    href="https://alriadhridoy.github.io/specta/"
+                    target="_blank"
+                    >Visit Site</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="item it-soft">
+                <div class="web-img">
+                  <img src="images/portfolio/portfolio-2.jpg" alt="" />
+                </div>
+                <figcaption class="flex-justify-column">
+                  <a
+                    href="https://alriadhridoy.github.io/itsoft"
+                    target="_blank"
+                    >Visit Site</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="item dataweb">
+                <div class="web-img">
+                  <img src="images/portfolio/portfolio-3.jpg" alt="" />
+                </div>
+                <figcaption class="flex-justify-column">
+                  <a
+                    href="https://alriadhridoy.github.io/dataweb/"
+                    target="_blank"
+                    >Visit Site</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="item applab">
+                <div class="web-img">
+                  <img src="images/portfolio/portfolio-4.jpg" alt="" />
+                </div>
+                <figcaption class="flex-justify-column">
+                  <a
+                    href="https://alriadhridoy.github.io/applab/"
+                    target="_blank"
+                    >Visit Site</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="item">
+                <div class="web-img">
+                  <img src="images/portfolio/coming-soon.jpg" alt="" />
+                </div>
+                <figcaption class="flex-justify-column">
+                  <a href="#" target="_blank">Visit Site</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================================================-->
+    <!-----Start service Section ----->
+    <!--===================================================-->
+    <section class="service" id="services">
+      <div class="container">
+        <div class="service-content flex-justify-column sec-content-gap">
+          <div class="service-top flex-justify-column sec-top">
+            <h2 class="section-header animate__animated">Service</h2>
+            <p>
+              I don't want to push my ideas on to customers, I simply want to
+              create what they want.
+            </p>
+          </div>
+
+          <div class="service-bottom">
+            <div class="service-items grid-4">
+              <div class="animate__animated item flex-justify-column">
+                <div class="icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML coversion</h3>
+                <p>
+                  Do you have a nice design in PhotoShop or even an image?
+                  Contact me and I'll convert them into fully responsive,
+                  nice-looking websites!
+                </p>
+              </div>
+
+              <div class="animate__animated item flex-justify-column">
+                <div class="icon">
+                  <i class="fab fa-slack"></i>
+                </div>
+                <h3>Custom website</h3>
+                <p>
+                  Do you want to be built your websites without using any kind
+                  of bootstrap or JQuery? Contact me and I will build your
+                  website using pure CSS and JS.
+                </p>
+              </div>
+
+              <div class="animate__animated item flex-justify-column">
+                <div class="icon">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <h3>Bootstrap conversion</h3>
+                <p>
+                  Everybody has their own choice. So, If you want to build your
+                  website using Bootstrap then I am ready to build it.
+                </p>
+              </div>
+
+              <div class="animate__animated item flex-justify-column">
+                <div class="icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Landing page design / redesign</h3>
+                <p>
+                  If you need any landing page or want to redesign your
+                  old-looking website to a new-looking website feel free to
+                  contact me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================================================-->
+    <!-----Start Contact Section ----->
+    <!--===================================================-->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content flex-justify-column sec-content-gap">
+          <div class="contact-top flex-justify-column sec-top">
+            <h2 class="section-header animate__animated">Cotanct</h2>
+            <h3>Contact me!</h3>
+          </div>
+
+          <div class="contact-bottom flex-justify-row">
+            <div class="contact-bottom-left">
+              <form
+                method="POST"
+                action="php.php"
+                class="contact-form flex-column"
+              >
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" />
+
+                <label for="textarea">Message</label>
+                <textarea id="textarea" name="message" rows="10"></textarea>
+                <button>Send</button>
+              </form>
+            </div>
+            <div class="contact-bottom-right">
+              <div class="contact-info flex-column">
+                <h3>Contact Info</h3>
+                <ul class="flex-column cnct-frst-ul contact-loc">
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Bhairabpur Uttarpara <br />
+                    Bhairab, Kishoreganj <br />
+                    Dhaka, Bangladesh
+                  </li>
+                  <li>
+                    <a href="mailto:alriadhridoy123@gmail.com"
+                      ><i class="fas fa-envelope"></i>
+                      alriadhridoy123@gmail.com
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="flex-row cnct-scnd-ul self-social-links">
+                  <li>
+                    <a
+                      class="flex-justify-row"
+                      href="https://www.facebook.com/alriadhridoy/"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="flex-justify-row" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex-justify-row"
+                      href="https://www.instagram.com/alriadhridoy/"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex-justify-row"
+                      href="https://www.linkedin.com/in/al-riad-hridoy-5049201a4/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content flex-column">
+          <div class="footer-main grid-4">
+            <div class="footer-about-me">
+              <h3>About me</h3>
+              <h2>Al Riad Hridoy</h2>
+              <ul class="flex-row self-social-links">
+                <li>
+                  <a
+                    class="flex-justify-row"
+                    href="https://www.facebook.com/alriadhridoy/"
+                    target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="flex-justify-row" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="flex-justify-row"
+                    href="https://www.instagram.com/alriadhridoy/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="flex-justify-row"
+                    href="https://www.linkedin.com/in/al-riad-hridoy-5049201a4/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-about">
+              <h3>About</h3>
+              <ul class="footer-links flex-column">
+                <a href="#home"><li>Home</li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#services"><li>Services</li> </a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
+            </div>
+
+            <div class="footer-service">
+              <h3>Services</h3>
+              <ul class="flex-column">
+                <li>Web Development</li>
+                <li>HTML Conversion</li>
+                <li>Design/Redesign Webpage</li>
+                <li>Landing Website</li>
+                <li>Bootstrap Coversion</li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <h3>Contact</h3>
+              <ul class="flex-column contact-loc">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  Bhairabpur Uttarpara <br />
+                  Bhairab, Kishoreganj <br />
+                  Bangladesh
+                </li>
+                <li>
+                  <a href="mailto:alriadhridoy123@gmail.com"
+                    ><i class="fas fa-envelope"></i>
+                    alriadhridoy123@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom flex-justify-row">
+            <p>All Right reserved by ©Al Riad Hridoy 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================================================-->
+    <!-----Start Header Section ----->
+    <!--===================================================-->
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+    <!-- WOW js -->
+    <script src="js/wow.min.js"></script>
+    <!-- Owl Slider -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Slider -->
+    <script src="js/slider.js"></script>
+  </body>
+</html>

@@ -135,3 +135,22 @@ $(document).ready(function () {
 
   $(".footer-bottom").html(`All Right reserved by ©Al Riad Hridoy ${year}`);
 });
+
+// $(document).ready(function() {
+//   const prg = function(n, ele) {
+//     var count = 0
+//     setInterval(() => {
+//       if (count < n) {
+//         count ++
+//       } else {
+//         clearInterval()
+//       }
+//       $(ele).html(count + "%")
+//     }, 18)
+//   }
+
+// const progress = [85, 90, 70, 80]
+//   for (var i = 0; i < 4; i++) {
+//     prg(progress[i], $('.percent')[i])
+//   }
+// })
