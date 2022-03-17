@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66f86699.css",
+    "main.js": "/static/js/main.6700b493.js",
+    "static/media/problem_solving.png": "/static/media/problem_solving.87a32846da7d54ccfcc6.png",
+    "static/media/pythonCir.png": "/static/media/pythonCir.0e04ad11e4d04bd8ffb9.png",
+    "static/media/my-self.jpg": "/static/media/my-self.4c9183666f96744b7da6.jpg",
+    "static/media/portfolio-1.jpg": "/static/media/portfolio-1.56f2ad51fd8db941baa7.jpg",
+    "static/media/portfolio-2.jpg": "/static/media/portfolio-2.046e5ce879e1ac55eb6c.jpg",
+    "static/media/covid_19.png": "/static/media/covid_19.9ceaa538d881248a6f84.png",
+    "static/media/my-icon.png": "/static/media/my-icon.943949b844a38495dab8.png",
+    "static/media/react.png": "/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/photoshop.png": "/static/media/photoshop.f7db33b30145358b932c.png",
+    "static/media/python.png": "/static/media/python.f7f12e1bf59e577656a2.png",
+    "static/media/scss.png": "/static/media/scss.5e9edffeb2e392a63e04.png",
+    "index.html": "/index.html",
+    "static/media/nav_close.svg": "/static/media/nav_close.794a9cde26c38ff6bb066032df98fb39.svg",
+    "main.66f86699.css.map": "/static/css/main.66f86699.css.map",
+    "main.6700b493.js.map": "/static/js/main.6700b493.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66f86699.css",
+    "static/js/main.6700b493.js"
+  ]
+}
